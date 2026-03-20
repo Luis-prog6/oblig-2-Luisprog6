@@ -10,7 +10,7 @@ def f(x):
 
 #Likningen som blir når f(x) blir derivert sånn at den kan bli satt lik null:
 def g(x):
-    return np.arctan(x)-(4/((x**2)+1))
+    return np.arctan(x)-(4/(x**2 +1))
 
 #Setter null for å finne løsningen, bruker fsolve:
 x0 = 1 #evt startsted
@@ -39,5 +39,5 @@ plt.ylabel("f(x)")
 plt.title("Grafen av f(x) med toppunktet")
 #Lager ruter for lettere lesing
 plt.grid()
-
+plt.show()
 
