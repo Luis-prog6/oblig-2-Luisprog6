@@ -1,12 +1,33 @@
+#Kort sammenfatning av hva jeg gjorde med pen, se bilde av notaten nede:
+#Funksjonen vi har fått i oppgaven består av 2 faktorer, så må bruke produktregelen og kjerneregelen,
+#til å derividere funksjonen. 
+#Vi gjør det siden vi må løse den derividerte av funksjonen for lik null. 
+#Sånn finner man toppunktet(maks). 
+#Når jeg gjorde  dette fikk jeg en alt for komplisert likning så bruker python for å løse
+
 import numpy as np
 import matplotlib.pyplot as plt
+from scripy.optimize import fsolve
 
+#Funksjonen gitt:
 def f(x):
     return (np.e**(-x/4))*np.arctan(x)
 
+#Likningen f(x) derivert som skal bli satt lik null:
 def g(x):
     return np.arctan(x)-(4/((x**2)+1))
 
+#Setter null for å finne løsningen, bruker fsolve:
+x0 = 1 
+x_topp = fsolve(g, x0) [0]
+y_topp = f(x_topp)
+
+#Printer resultat:
+print(f"x = {x_topp: .4f} " )
+print(f"f(x) = {y_topp: .4f}")
+
+
+    
 #(np.arctan(x)-(4/((x**2)+1))) = 0
 #(np.arctan(x) = (4/(x**2)+1)
 #x = np.tan((4/(x**2)+1))  ||  (np.arctan(x))*((x**2)+1) = 4
