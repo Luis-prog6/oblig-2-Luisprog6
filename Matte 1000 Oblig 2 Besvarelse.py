@@ -7,7 +7,7 @@
 
 import numpy as np
 import matplotlib.pyplot as plt
-from scripy.optimize import fsolve
+from scipy.optimize import fsolve
 
 #Funksjonen gitt:
 def f(x):
