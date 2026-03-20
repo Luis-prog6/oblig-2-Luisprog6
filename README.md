@@ -5,7 +5,8 @@
  lumys0613@oslomet.no
 
  Oblig2 DAFE1000
- For å sammenfatte hva jeg gjorde i notatene kort, så jeg at funksjonen vi fikk besto av 2 faktorer.
+ Oppgaven) Finn toppunktet til funksjonen f(x) = e^(-x/4)arctan (x) 
+ jeg så at funksjonen vi fikk besto av 2 faktorer.
  Siden vi skal finne toppunktet av funksjonen f(x) = e^(-x/4)arctan (x), vet jeg at man skal derividere funksjonen.
  Jeg brukte kjerne og produktregelen for å gjøre dette og satt lik 0:
  f'(x) = arctan(x) - 4/(x^2 + 1) 
